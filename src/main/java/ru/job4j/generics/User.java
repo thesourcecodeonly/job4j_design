@@ -7,7 +7,6 @@ public class User extends Base {
         super(id);
         this.username = name;
     }
-
     public String getUsername() {
         return username;
     }
