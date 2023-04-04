@@ -177,7 +177,7 @@ class SimpleArrayListTest {
         assertThat(list.size()).isEqualTo(1);
         assertThat(list.get(0)).isEqualTo(1);
     }
-    /*
+
     @Test
     void whenAddAfterGetIteratorHasNextThenMustBeException() {
         Iterator<Integer> iterator = list.iterator();
@@ -194,7 +194,6 @@ class SimpleArrayListTest {
         assertThatThrownBy(iterator::hasNext)
                 .isInstanceOf(ConcurrentModificationException.class);
     }
-    */
 
     @Test
     void whenRemoveAfterGetIteratorThenMustBeException() {
