@@ -13,9 +13,7 @@ public class ListUsage {
         List<String> list = new ArrayList<>();
         list.add("four");
         list.add("five");
-        // rsl.addAll(2, list);
         rsl.set(1, "two and second");
-        // rsl.replaceAll(String::toUpperCase);
         rsl.remove(1);
         for (String s : rsl) {
             System.out.println("Текущий элемент: " + s);
