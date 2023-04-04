@@ -186,7 +186,6 @@ class SimpleArrayListTest {
         assertThatThrownBy(iterator::hasNext)
                 .isInstanceOf(ConcurrentModificationException.class);
     }
-
     @Test
     void whenRemoveAfterGetIteratorHasNextThenMustBeException() {
         Iterator<Integer> iterator = list.iterator();
